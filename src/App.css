@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: rgba(13, 42, 79, 1);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20em;
+}
+
+.header-top-text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.header-top-text h1 {
+  color: #eee;
+}
+
+.btn-for-toggle {
+  background-color: rgb(7, 61, 119);
+  border: none;
+  border-radius: 2em;
+  width: 8%;
+  height: 1.3em;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.btn-toggle-2 {
+  width: 25%;
+  font-size: 1.1em;
+  margin-left: 16.5em;
+}
+
+.btn-toggle-3 {
+  width: 43%;
+  font-size: 1.1em;
+  margin-left: 0.6em;
+}
+
+.extra-sec {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.really-div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.inactive {
+  width: 25%;
+  font-size: 1em;
+}
+
+.btn-toggle-4 .inactive {
+  width: 20%;
+  font-size: 1em;
+}
+
+.header-top-text h2 {
+  margin-left: 0.5em;
+}
+
+.really-text {
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.header-top-text h2:after {
+  content: '';
+  position: absolute;
+  border-left: 2px solid #eee;
+  left: 51%;
+  height: 100%;
+  height: 100%;
+  width: 70%;
+  background-color: rgba(13, 42, 79, 1);
+  border-left: 2px solid slategray;
+  animation: typing 1.5s steps(13) infinite;
+  margin-left: 0.6em;
+}
+
+.header-middle-text {
+  display: flex;
+  height: 50px;
+  line-height: 2em;
+  overflow: hidden;
+}
+
+.header-middle-text li {
+  margin-left: 1em;
+  color: rgba(218, 6, 6, 0.955);
+  font-weight: 600;
+  position: relative;
+  top: 3px;
+  animation: slide 4s steps(4) infinite;
+  margin-bottom: 1em;
+}
+
+.header-middle-text li:last-of-type {
+  top: 7px;
+}
+
+.header-middle-text li:last-of-type h3 {
+  height: 42px;
+}
+
+@keyframes slide {
+  100% {
+    top: -230px;
+  }
+}
+
+.header-middle-sub-text {
+  line-height: 39px;
+}
+
+.header-middle-text h2 {
+  font-size: 3rem;
+}
+
+.header-middle-text h3 {
+  position: relative;
+  font-size: 2rem;
+  height: 42px;
+}
+
+.header-middle-text h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(13, 42, 79, 1);
+  border-left: 2px solid slategray;
+  animation: typing 1s steps(7) infinite;
+}
+
+.header-middle-text h3::after {
+  margin-left: 0.2em;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+}
